@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #000;
+  background-image: url(images/final2.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.wrapper {
+  width: 1500px;
+  margin: 0px;
+}
+.nav-area {
+  float: right;
+  list-style-type: none;
+  margin-top: 0px;
+  padding-right: 10px;
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  color: rgb(255, 255, 255);
+  display: flex;
+  gap: 4.8;
+  float: right;
+  box-shadow: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+.nav-area li a:hover {
+  background: rgb(201, 7, 7);
+  color: rgb(10, 8, 12);
+  transition: 0.5s;
+}
+.logo img {
+  width: 150px;
+  float: left;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.welcome-text {
+  border: 10px solid black;
+  background-color: black;
+}
+.welcome-text h1 {
+  position: -ms-page;
+  border-left: 10px;
+  text-align: center;
+  text-shadow: 5px;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 250, 250);
+}
+.welcome-text p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: larger;
+  font-weight: bold;
+  color: aliceblue;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 240px auto;
+}
+.container .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: #000;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.container .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 0, 0);
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .icon {
+  top: 20px;
+  left: calc(50% -40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.container .box .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5sec;
+  color: black;
+}
+.container .box:hover .icon .fa {
+  font-size: 40px;
+}
+.container .box .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 00.5s;
+  opacity: 0;
+}
+.container .box:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+.container .box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}

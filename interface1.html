@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  >
+    <style>
+    body{
+       background-image:url("background-1.jpg");
+       margin:2%;
+
+    }
+    #box1{
+           float:left;
+           position:relative;
+           top:-50px;
+           height:100px;
+           width:120px;
+           border-radius:20px;
+           background-color:rgb(129, 124, 124);
+           padding:5px;   
+    }
+
+    
+    .top{
+       color:rgb(218, 205, 205);
+       position:relative;
+       left:20px;
+       top:110px;
+       font-size:80px ;
+       font-family:'Times New Roman', Times, serif, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       text-shadow:50px;
+       text-shadow:80%;
+    }
+    .first{
+          float:right;
+           position:relative;
+           top:-30px;
+           right:5px;
+           margin:20px;
+           height:450px;
+           width:480px;
+           border-radius:30px;
+           background-image:url("img2.jpg");
+           background-color:rgb(112, 110, 110);
+           object-fit: cover;
+           padding:5px;
+           animation: changeimage 15s linear infinite;
+    }
+
+    @keyframes changeimage{
+      0%{
+         background-image:url("imag1.jpg") ;
+      }
+      25%{
+         background-image:url("img2.jpg") ;
+      }
+      50%{
+         background-image:url("img3.jpg");
+      }
+      75%{
+         background-image:url("imag6.jpg");
+      }
+      100%{
+         background-image:url("img7.jpg");
+      }
+      0%{
+         background-image:url("imag1.jpg") ;
+      }
+    }
+    .top1{
+       color:rgb(239, 239, 239);
+       position:relative;
+       left:30px;
+       top:100px;
+       font-size:30px ;
+       font-family:'Trebuchet MS';
+    }   
+    .container{
+      display:grid;
+      position:relative;
+      top:130px;
+      align-items: center;
+      grid-template-columns: 3fr 3fr 3fr;
+      grid-gap:40px;
+      
+    }
+    .sub-container{
+      color:black;
+      font-family:sans-serif;
+      font-size:40px;
+      border-radius:15px;
+      box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+      transition:0.5s;
+      width:100%;
+      justify-content:center;
+    } 
+    
+   .sub-container:hover{
+         transform:scale(1.3);
+         z-index:1.5;
+    }  
+    .ONE{
+      height:100px;
+      width:100px;
+      justify-items: center;
+    }
+    .level{
+      background-color:rgb(160, 170, 170);
+      height: 400px;
+      float:right;
+      background:rgba(255,255,255,0.7);
+      position:relative;
+      top:-120px;
+      right:120px;
+      border-radius:10px;
+      margin:auto;
+      align-items: center;
+      padding:2px;
+    }
+    .CR1{
+      font-size:20px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color:black;
+     
+    }
+    #yes1 {
+      border: 5px solid white;
+      font-size: large;
+      font-family: sans-serif; 
+
+    }
+    #yes1:hover{
+      background-color: aquamarine;
+    }
+    .new{
+      position:relative;
+      width:1200px;
+      height:300px;
+      margin:240px auto;
+    }
+    .new.box{
+      position:relative;
+      width:470px;
+      height:270px;
+      background:black;
+      margin:15px;
+      box-sizing:border-box;
+      border-radius:10px;
+    }
+    .select{
+      font-size:20px;
+      color:aliceblue;
+      position:relative;
+      top:100px;
+    }
+    #res{
+      font-family: sans-serif;
+      font-size: larger;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-left: 5px;
+   padding : 10px;
+    }
+    .level{
+      font-family: sans-serif;
+  
+      color:black;
+    }
+    .CR1{
+      color:black;
+      font-family: sans-serif ;
+         font-weight: bold;
+    }
+    #lvl{
+      font-family: sans-serif;
+      color:black;
+      font-size: large ;
+      font-weight: bold;
+
+    }
+    #sub1{
+      border: 5px solid black;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+  
+    </style>    
+</head>
+<body>
+<div>
+<img src="humanity.png" id="box1"> 
+</div>   
+<div class="first">
+</div>
+   <H1 class="top">Welcome To Kids Section</H1> 
+   <br>
+   <H2 class="top1">"A book is a gift one can open again and again."<br>-Garrison Keilor<br><br></H2>
+   <div class="select">Select Your Genere:</div> 
+<div class="container">
+   <div class="sub-container"><a href="challenge.html"><img src="sports.gif" class="ONE"></a></div>
+   <div class="sub-container"><img src="grid4.png" class="ONE"></div>
+   <div class="sub-container"><img src="UKzC.gif" class="ONE"></div>
+   <div class="sub-container"><img src="story.gif"class="ONE"></div>
+   <div class="sub-container"><img src="toddler.gif" class="ONE"></div>
+   <div class="sub-container"><img src="grid6.gif" class="ONE"></div>
+</div>
+<div class="level">
+   <div id="lvl">Current Status:<br><br>Current Level:1<br>Current Book: Insights of football<br><br></div>
+   <div class="CR1">Please answer the following Questions </div>
+
+   <ul>
+   <li><div class="CR1">Who is the author of book?</div></li>
+   <input type="button" value="YOU" class="CR1" id="Yes1"></input>
+   <input type="button" VALUE="ME" class="CR1" id="No1"></input>
+   <li><div class="CR1">Who is the main character of book?</div></li>
+   <input type="button" value="YOU" class="CR1"  id="Yes2"></input>
+   <input type="button" VALUE="ME" class="CR1" id="No2"></input>
+   <li><div class="CR1">Was the character honest?</div></li>
+   <input type="button" Value="YES" class="CR1"  id="Yes2"></input>
+   <input type="button" Value="NO" class="CR1" id="No2"></input>
+
+  <li> <div class="CR1">Please submit the report:<button id="sub1">Submit</button></div></li>
+  <div id="res">Result</div>
+  </ul>
+</div> 
+<script src="script2.js" charset="UTF-8"></script>  
+</body>
+</html>

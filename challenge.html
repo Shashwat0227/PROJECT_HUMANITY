@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+          padding:0px;
+          margin:0px;
+          display:flex;
+          flex-direction:column;
+          font-family:'Trebuchet MS';
+      }
+      .one{
+          background-color: rgb(8, 6, 4);
+          color:white;
+          height:200px;
+          text-align:center;
+          font-weight:bold;
+      }
+      .image{
+          height:30px;
+          width:20px
+          position:relative;
+          left:600px;
+
+      }
+      .new{
+          position:relative;
+          top:8px;
+          left:-300px;
+          color:rgb(216, 214, 214);
+          position:relative;
+          font-size:75px;
+          text-transform:uppercase;
+      }
+      .new:before{
+          content: attr(data-text);
+          position:absolute;
+          top:0;
+          bottom:0;
+          transform-origin:bottom;
+          transform:rotateX(180deg);
+          Line-height:100px;
+          transform-origin:bottom;
+          background:linear-gradient(to top,#fff,transparent);
+          -webkit-background-clip:text;
+          color:transporent;
+          opacity:0.2;
+      }
+
+      #two{
+          background-color: rgb(14, 101, 116);
+          color:white;
+          height:60px;
+       }
+       .two{
+          font-size:20px;
+          animation:anim 10s linear infinite;
+       }
+       @keyframes anim{
+          0%{transform:translate(100%)}
+          100%{transform:translate(0%)}
+      }
+
+      #box,#box2{
+         float:left;
+         position:relative;
+         right:5px;
+         margin:20px;
+         height:100px;
+         width:100px;
+         border-radius:30px;
+         background-color:black;
+         padding:5px;
+      }
+      #box1,#box3{
+         float:right;
+         position:relative;
+         right:5px;
+         margin:20px;
+         height:100px;
+         width:100px;
+         border-radius:30px;
+         background-color:black;
+         padding:5px;
+      }
+      .first,.third{
+          background-color:rgb(167, 167, 168);
+          height:150px;
+      }
+      .second,.fourth{
+          background-color:rgb(179, 208, 215);
+          height:150px;
+      }
+      .book1{
+          position:relative;
+          top:10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size:15px;
+          font-style:bold;
+      }
+      .anchor{
+          background-color: black;
+          color:white;
+          font-size:15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="image"><img src="sports4.jpg" /></div>
+      <div class="new" data-text="Sports section">Sports section</div>
+    </div>
+    <div id="two">
+      <div class="two">
+        <pre>
+"Sports don't build characters,they reflect them ."- John Wooden</pre
+        >
+      </div>
+    </div>
+    <div class="first">
+      <img src="books1.jpg" id="box" />
+      <div class="book1">
+        Year Published: 2015<br />Author:Mr Aryan<br /><br />Description :
+      </div>
+      <p class="box">
+        The story revolves around one of the most famous cricketer Sachin
+        Tendulkar.His struggles,determination and hardwork reflects his reasons
+        for succeeding in life
+      </p>
+    </div>
+    <div class="second">
+      <img src="books1.jpg" id="box1" />
+      <div class="book1">
+        Year Published: 2015<br />Author:Mr Aryan<br /><br />Description :
+      </div>
+      <p class="box">
+        The story revolves around one of the most famous cricketer Sachin
+        Tendulkar.His struggles,determination and hardwork reflects his reasons
+        for succeeding in life
+      </p>
+    </div>
+    <div class="third">
+      <img src="books1.jpg" id="box2" />
+      <div class="book1">
+        Year Published: 2015<br />Author:Mr Aryan<br /><br />Description :
+      </div>
+      <p class="box">
+        The story revolves around one of the most famous cricketer Sachin
+        Tendulkar.His struggles,determination and hardwork reflects his reasons
+        for succeeding in life
+      </p>
+    </div>
+    <div class="fourth">
+      <img src="books1.jpg" id="box3" />
+      <div class="book1">
+        Year Published: 2015<br />Author:Mr Aryan<br /><br />Description :
+      </div>
+      <p class="box">
+        The story revolves around one of the most famous cricketer Sachin
+        Tendulkar.His struggles,determination and hardwork reflects his reasons
+        for succeeding in life
+      </p>
+    </div>
+    <div class="anchor">
+      <a href="#">Go to top</a>
+    </div>
+  </body>
+</html>
